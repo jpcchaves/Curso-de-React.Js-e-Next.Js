@@ -1,0 +1,11 @@
+.post:hover {
+  transform: scale(1.01);
+}
+
+.post img {
+  max-width: 100%;
+}
+
+.post-content {
+  padding: 30px;
+}

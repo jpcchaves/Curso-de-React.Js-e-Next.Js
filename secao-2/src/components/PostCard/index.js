@@ -1,3 +1,6 @@
+import './styles.css'
+
+
 const PostCard = (props) => {
   const post = props.post;
 
