@@ -1,12 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
+import { AppContext } from "./contexts/App";
+import { Div } from "./Components/Div";
 
 function App() {
   // 1- useState
   const [reverse, setReverse] = useState(false);
   const [counter, setCounter] = useState(0);
   const reverseClass = reverse ? "reverse" : "";
+
+  // useContext
 
   const handleClick = () => {
     setReverse(!reverse);
@@ -57,6 +61,12 @@ function App() {
         <button onClick={() => setCounter(counter + 1)}>
           Atualizar Component
         </button>
+      </section>
+      <section className="App-section">
+        <h1>useContext</h1>
+        <AppContext>
+          <Div />
+        </AppContext>
       </section>
     </div>
   );
